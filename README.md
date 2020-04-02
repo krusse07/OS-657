@@ -1,2 +1,2 @@
-# OS-657
+# Syracuse University Graduate School Cybersecurity OS-657
 Operating Systems using Xinu
