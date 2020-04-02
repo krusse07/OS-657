@@ -30,7 +30,8 @@ void	resched(void)		/* assumes interrupts are disabled	*/
 		/* Old process will no longer remain current */
 
 		ptold->prstate = PR_READY;
-		insert(currpid, readylist, ptold->prprio);
+		//insert(currpid, readylist, ptold->prprio);  // use for round robin
+		enqueue(currpid, readylist);  	// use for FCFS				
 	}
 
 	/* Force context switch to highest priority ready process */
